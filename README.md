@@ -26,9 +26,12 @@ Red - If not set for auto start.<br/>
 ![image](https://user-images.githubusercontent.com/34564081/225568272-53e5aca7-af55-4ef2-ac0d-6bc035cfd1d2.png)
 Green - If it will auto start with windows.
 #### Tray Icon
-![image](https://user-images.githubusercontent.com/34564081/225565356-6113db04-d982-47e5-b662-4c32dbd2ced2.png)<br/>
+![image](https://user-images.githubusercontent.com/34564081/225581012-a2521ece-f355-477b-9e59-5b14d3790321.png)<br/>
 Updates each 500ms and changes the icon to the coresponding seconds.<br/>
 The icons can be changed in Resources folder with more beautifull ones.<br/>
 
-## Updates
-Update: 16.03.23 - seconds only from 01 to 30... :)
+## Program
+1. Generates Icons for each second at start up from a default empty icon<br/>
+- Generate array with 60 Icons<br/>
+2. Each 500ms changes to coresponding icon<br/>
+- Get the current seconds and get the Icon from Array[seconds]
