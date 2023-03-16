@@ -1,5 +1,8 @@
 # Seconds In Tray Icon
-Show current seconds in task bar.
+Show current seconds in task bar.<br/>
+
+## Download the "SystemTrayApp.zip" for the actual app.<br/>
+
 
 ## Windows 11 Update T-T
 After Windows 11 Update<br/>
