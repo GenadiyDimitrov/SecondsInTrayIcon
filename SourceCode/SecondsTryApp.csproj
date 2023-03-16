@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Icons.cs" />
     <Compile Include="FullForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,76 +85,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\11.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\01.ico" />
-    <Resource Include="Resources\02.ico" />
-    <Resource Include="Resources\03.ico" />
-    <Resource Include="Resources\04.ico" />
-    <Resource Include="Resources\05.ico" />
-    <Resource Include="Resources\06.ico" />
-    <Resource Include="Resources\07.ico" />
-    <Resource Include="Resources\08.ico" />
-    <Resource Include="Resources\09.ico" />
-    <Resource Include="Resources\10.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\12.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\13.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\14.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\15.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\16.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\17.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\18.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\19.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\20.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\21.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\22.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\23.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\24.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\25.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\26.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\27.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\28.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\29.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\30.ico" />
+    <Content Include="Resources\00.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

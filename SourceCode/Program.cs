@@ -24,6 +24,7 @@ namespace SecondsTryApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Icons.GenerateIcons();
 
             //fill fields
             ResourceManager = new ResourceManager(typeof(Properties.Resources));
@@ -42,8 +43,7 @@ namespace SecondsTryApp
             AppIcon.ContextMenu = contextMenu;
 
             //app additional data
-            AppIcon.Icon = Properties.Resources._01;
-            AppIcon.Text = DateTime.Now.Second.ToString();
+            UpdateIcon();
             AppIcon.Visible = true;
             AppIcon.MouseClick += new MouseEventHandler(AppIcon_MouseClick);
 
@@ -59,18 +59,16 @@ namespace SecondsTryApp
         {
             try
             {
-                //extract seconds and change to the coresponding icon
-                string secs = $"{DateTime.Now.Second:00}";
-                if (ResourceManager.GetObject($"_{secs}") is Icon icon)
-                {
-                    AppIcon.Icon = icon;
-                }
-                AppIcon.Text = secs;
+                UpdateIcon();
                 OnTimerTick?.Invoke();
             }
             catch (Exception ex)
             {
             }
+        }
+        private static void UpdateIcon()
+        {
+            AppIcon.Icon = Icons.Data[DateTime.Now.Second];
         }
         private static void AppIcon_MouseClick(object sender, MouseEventArgs e)
         {
